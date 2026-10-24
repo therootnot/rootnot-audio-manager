@@ -1,0 +1,22 @@
+name: Предложить улучшение
+description: Новая возможность или улучшение текущего поведения.
+title: "[Предложение] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую задачу нужно решить
+      description: Что сейчас неудобно или недоступно?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Желаемое поведение
+      description: Как приложение должно помочь решить эту задачу?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Примеры или дополнительные сведения

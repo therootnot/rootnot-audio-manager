@@ -1,0 +1,16 @@
+# Only the public application page and its approved assets belong here.
+*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/README.en.md
+!/CHANGELOG.md
+!/SUPPORT.md
+!/.github/
+!/.github/ISSUE_TEMPLATE/
+!/.github/ISSUE_TEMPLATE/*.yml
+!/assets/
+!/assets/icon.png
+!/assets/screenshots/
+!/assets/screenshots/manager.png
+!/assets/screenshots/startup.png

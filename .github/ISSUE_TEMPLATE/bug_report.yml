@@ -1,0 +1,48 @@
+name: Сообщить об ошибке
+description: Проблема с интерфейсом, загрузкой, установкой или обновлением.
+title: "[Ошибка] "
+body:
+  - type: input
+    id: manager-version
+    attributes:
+      label: Версия менеджера
+      placeholder: Например, 0.9.14
+    validations:
+      required: true
+  - type: input
+    id: windows-version
+    attributes:
+      label: Версия Windows
+      placeholder: Например, Windows 11, 24H2
+    validations:
+      required: true
+  - type: input
+    id: plugin
+    attributes:
+      label: Плагин и его версия
+      description: Заполните, если ошибка связана с определённым плагином.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить ошибку
+      description: Опишите действия по порядку.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемое поведение
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Что произошло
+      description: Можно добавить скриншот или текст ошибки. Уберите личные данные перед отправкой.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Дополнительные сведения
+      description: Для ошибок интерфейса — разрешение и масштаб Windows. Для установки — выбранные форматы и состояние DAW.
